@@ -2,20 +2,23 @@
 <html>
 <head>
     <script type="text/javascript">
-	console.log = function(msg) {
+    console.log = function(msg) {
         var ul = document.getElementById("log");
         var li = document.createElement("li");
         li.appendChild(document.createTextNode(msg));
         ul.appendChild(li);
     }
 
-    window.onLoad = function() {
-        document.getElementById("run").onClick = function() {
+    window.onload = function() {
+        document.getElementById("run").onclick = function() {
 
-    var a = "ÀÚ¹Ù½ºÅ©¸³Æ®";
-    var b = "ÇÁ·Î±×·¡¹Ö";
-    var sum = a + b;
-    console.log(sum); }}
+            var a = "ìë°”ìŠ¤í¬ë¦½íŠ¸";
+            var b = "í”„ë¡œê·¸ë˜ë°";
+            var sum = a + b;
+
+            console.log(sum);
+        }
+    }
     </script>
 </head>
 <body>

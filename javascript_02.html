@@ -1,39 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<script type="text/javascript">
-	console.log = function(msg) {
+    <script type="text/javascript">
+    console.log = function(msg) {
         var ul = document.getElementById("log");
         var li = document.createElement("li");
         li.appendChild(document.createTextNode(msg));
         ul.appendChild(li);
     }
 
-    window.onLoad = function() {
-        document.getElementById("run").onClick = function() {
-	var text1 = "¾È³çÇÏ¼¼¿ä.";
-	var text2 = '¾È³çÇÏ¼¼¿ä.';
+    window.onload = function() {
+        document.getElementById("run").onclick = function() {
 
-	// Å« µû¿ÈÇ¥(") ÀÎ¿ë¹®Àå Ãâ·Â
-	// Ä£±¸°¡ ¸»Çß´Ù "¼ö¾÷ ¶¯¶¯ÀÌ Ä¡ÀÚ. F´Â ¿ì¸®ÀÇ ¸ò."
-	var text3 = "Ä£±¸°¡ ¸»Çß´Ù \"¼ö¾÷ ¶¯¶¯ÀÌ Ä¡ÀÚ. F´Â ¿ì¸®ÀÇ ¸ò.\"";
-	var text4 = 'Ä£±¸°¡ ¸»Çß´Ù "¼ö¾÷ ¶¯¶¯ÀÌ Ä¡ÀÚ. F´Â ¿ì¸®ÀÇ ¸ò."';
-	
-	// ÀÛÀº µû¿ÈÇ¥(') ÀÎ¿ë¹®Àå Ãâ·Â
-	// Ä£±¸°¡ ¸»Çß´Ù '¼ö¾÷ ¶¯¶¯ÀÌ Ä¡ÀÚ. F´Â ¿ì¸®ÀÇ ¸ò.'
-	var text5 = "Ä£±¸°¡ ¸»Çß´Ù '¼ö¾÷ ¶¯¶¯ÀÌ Ä¡ÀÚ. F´Â ¿ì¸®ÀÇ ¸ò.'";
-	var text6 = 'Ä£±¸°¡ ¸»Çß´Ù \'¼ö¾÷ ¶¯¶¯ÀÌ Ä¡ÀÚ. F´Â ¿ì¸®ÀÇ ¸ò.\'';
-
-	console.log(text1);
-	console.log(text2);
-	console.log(text3);
-	console.log(text4);
-	console.log(text5);
-	console.log(text6);
-	  }
-	}
-
-	</script>
+            var text1 = "ì•ˆë…•í•˜ì„¸ìš”.";
+            var test2 = 'ì•ˆë…•í•˜ì„¸ìš”.';
+            
+            var text3 = "ì¹œêµ¬ê°€ ë§í–ˆë‹¤ \"ìˆ˜ì—… ë•¡ë•¡ì´ ì¹˜ì. FëŠ” ìš°ë¦¬ì˜ ëª«.\"";
+            var text4 = 'ì¹œêµ¬ê°€ ë§í–ˆë‹¤ "ìˆ˜ì—… ë•¡ë•¡ì´ ì¹˜ì. FëŠ” ìš°ë¦¬ì˜ ëª«."';
+            
+            var text5 = "ì¹œêµ¬ê°€ ë§í–ˆë‹¤ 'ìˆ˜ì—… ë•¡ë•¡ì´ ì¹˜ì. FëŠ” ìš°ë¦¬ì˜ ëª«.'";
+            var text6 = 'ì¹œêµ¬ê°€ ë§í–ˆë‹¤ \'ìˆ˜ì—… ë•¡ë•¡ì´ ì¹˜ì. FëŠ” ìš°ë¦¬ì˜ ëª«.\'';
+            
+            console.log(text1);
+            console.log(text2);
+            console.log(text3);
+            console.log(text4);
+            console.log(text5);
+            console.log(text6);
+        }
+    }
+    </script>
 </head>
 <body>
 </body>
